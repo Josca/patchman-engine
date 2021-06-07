@@ -1,8 +1,6 @@
 version: '3.4'
 
 services:
-
-
   zookeeper:
     image: confluentinc/cp-zookeeper:5.4.0
     container_name: zookeeper
@@ -26,7 +24,3 @@ services:
       - 29093:29093
       - 9092:9092
       - 9093:9093
-
-
-volumes:
-  db-data:
